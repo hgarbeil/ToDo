@@ -35,9 +35,9 @@ body{
 
 .list li{
     list-style-type: none;
-    font-size: 16px ;
+    font-size: 18px ;
     padding: 10px ;
-    font-family: cursive;
+    font-family: "Helvetica";
     font-style: bold ;
     border-top: dotted ;
     border-color: darkgray;
