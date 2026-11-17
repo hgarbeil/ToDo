@@ -1,6 +1,7 @@
 const formEl = document.querySelector(".form");
 const inputEl = document.querySelector(".input");
 const ulEl = document.querySelector(".list");
+const removeBtn = document.getElementById("removeButton");
 
 let list = JSON.parse(localStorage.getItem("list")) ;
 if(list){
@@ -14,6 +15,10 @@ formEl.addEventListener("submit", (event)=>{
     event.preventDefault() ;
     todoList() ;
 
+}) ;
+removeBtn.addEventListener("click",()=>{
+    ulEl.innerHTML = "" ;
+    localStorage.clear() ;
 }) ;
 
 
