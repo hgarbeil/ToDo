@@ -7,7 +7,13 @@ let list = JSON.parse(localStorage.getItem("list")) ;
 if(list){
 list.forEach(li0=>{
     todoList(li0) ;
+    inputEl.style.borderBottomLeftRadius = "0px";
+    inputEl.style.borderBottomRightRadius = "0px";
 });
+
+} else {
+    inputEl.style.borderBottomLeftRadius = "5px";
+    inputEl.style.borderBottomRightRadius = "5px";
 }
 
 
